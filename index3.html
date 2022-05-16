@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Flamingo Style</title>
+  <link rel="shortcut icon" href="https://github.com/Kyrylchuk-of/modular.kr/blob/main/snoop.png?raw=true"/>
+</head>
+<style type="text/css">
+  body {
+    background: #e8a2d3;
+  }
+  .animated-button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 30px;
+    overflow: hidden;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgba(30, 255, 188, 1);
+    background: rgba(255, 255, 255, 1);
+    transition: color .3s, background .5s;
+  }
+  .animated-button:hover {
+    animation: stripes .75s infinite linear;
+    background: linear-gradient(45deg, rgba(30, 255, 188, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(30, 255, 188, 1) 50%, rgba(30, 255, 188, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1));
+    background-size: 10px 10px;
+    color: #FF50E5;
+  }
+  @keyframes stripes {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 0;
+    }
+  }
+  .none{
+    background: #FF50E5;
+  }
+</style>
+<body text="white" >
+<hr color="1EFFBCFF" size="25px">
+<br><br><br>
+<h1>
+  <center><script language="JavaScript">
+    document.write("Годинник Варіант 22<br>")
+  </script></center>
+</h1>
+<br><br><br><br>
+
+<center>
+<h1>
+  <script Language="JavaScript">
+    Data = new Date();
+    Year = Data.getFullYear();
+    Month = Data.getMonth();
+    Day = Data.getDate();
+    Data = new Date();
+    Hour = Data.getHours();
+    Minutes = Data.getMinutes();
+    Seconds = Data.getSeconds();
+
+
+    switch (Month)
+    {
+      case 0: fMonth="січень"; break;
+      case 1: fMonth="лютий"; break;
+      case 2: fMonth="березень"; break;
+      case 3: fMonth="квітень"; break;
+      case 4: fMonth="травень"; break;
+      case 5: fMonth="червунь"; break;
+      case 6: fMonth="липень"; break;
+      case 7: fMonth="серпень"; break;
+      case 8: fMonth="вересень"; break;
+      case 9: fMonth="жовтень"; break;
+      case 10: fMonth="листопад"; break;
+      case 11: fMonth="грудень"; break;
+    }
+    document.write("   " + Year + " рік, " + fMonth + " " + Day + "-ий день       ");
+    document.write("Час  " + Hour + ":" + Minutes + ":" + Seconds);
+  </script>
+  </h1>
+  <h2>year-moun-day-hour-min-sec</h2>
+  <br><br>
+  <br><br>
+
+  <a href="index2.html" class="animated-button">Back page</a>
+  <br><br><br><br><br><br><br><br>
+  <hr color="1EFFBCFF" size="25px">
+</center>
+</body>
+</html>
